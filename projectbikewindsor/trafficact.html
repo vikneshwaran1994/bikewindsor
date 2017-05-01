@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Business Frontpage - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href="bootstrap.css" rel="stylesheet" media="screen">
+    
+    <!-- Access the API & Load your JavaScript -->
+  
+    <script type='text/javascript' src='http://public.tableau.com/javascripts/api/tableau-2.js'></script>
+   <script type='text/javascript'>
+     var workbook;
+     var activeSheet;
+     window.onload= function() {
+// When the webpage has loaded, load the viz
+	var vizDiv = document.getElementById('myViz');
+	var vizURL = 'https://public.tableau.com/views/wind_7/Sheet3?:embed=y&:display_count=yes';
+	var options = {
+		width: '980px',
+		height: '540px',
+		hideToolbar: true,
+		hideTabs: true,
+		
+	};
+  var viz = new tableau.Viz(vizDiv, vizURL, options);
+};
+   
+   </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		
+    <![endif]-->
+
+</head>
+
+<body>
+<header class="business-header">
+        <div class="container">
+            <div class="row">
+                
+            </div>
+        </div>
+    </header>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.php">About</a>
+                    </li>
+                    <li>
+                        <a href="accident.html">Accidents</a>
+                    </li>
+                    <li>
+                        <a href="cyhabits.html">Accident cause</a>
+                    </li>
+					<li>
+                        <a href="trafficact.html">Traffic Act</a>
+                    </li>
+					<li>
+                        <a href="rentalsetup.html">Rental Setup</a>
+                    </li>
+					<li>
+                        <a href="physicalactivity.html">Physical Activity</a>
+                    </li>
+					<li>
+                        <a href="coursesinterested.html">Courses Interested</a>
+                    </li>
+					<li>
+                        <a href="bikestolen.html">Bikes Stolen</a>
+                    </li>
+					<li>
+                        <a href="Ridemoreif">Ride more if</a>
+                    </li>
+                </ul>
+            </div>
+    <!-- Page Content -->
+    
+ <div id="whatever" style="padding-top:200px;">
+						<div id='myViz' style="float:left;"></div>
+			            <div id="image" style="float:left;padding-left:80px;"><img src="infographic2.jpg" style="width:280px;"/></div>
+                         </div>
+ </div>
+<div id='myViz'style="padding-top:40px"></div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
